@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        protfile
+    </title>
+</head>
+<style>
+.content-div {
+    position: static;
+    flex-direction: column;
+    height: 300px;
+    background-color: rgb(136, 136, 245);
+}
+
+.text-container {
+   position: static;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px; 
+    margin: 20px 20px;
+}
+
+.h1 {
+    position: relative;
+    margin-bottom: 10px; 
+    text-align: left;
+    color: rgb(20, 18, 18);
+   
+}
+.p{
+    width: 250px;
+    font-size: medium;
+    position: relative;
+    left: 0px;
+}
+img{
+    border-radius: 50%;
+    position: absolute;
+    left: 60%;
+    top: 18%;
+    box-shadow: rgb(21, 21, 21) 3px 1px 2px;
+}
+
+
+
+.form-div {
+    width: 100%;
+    background-color: rgb(153, 153, 222);
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+.form-div h2 {
+    color:white;
+}
+
+.form-div p {
+    color: #c9cff5;
+}
+
+.form-div input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form-div button {
+    background-color: #4fbee4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-div button:hover {
+    background-color: #cc42f7;
+}
+
+
+
+
+.navigation-menu {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    padding: 10px 0;
+    background-image: linear-gradient(to bottom right, #5fa9fd,rgb(139, 133, 133));
+}
+
+.navigation-menu .home {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.navigation-menu .home:hover {
+    background-color: #b5bbfa;
+}
+.content-div{
+        width: 100%;
+       /* background-image: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+       */ background-image: linear-gradient(to bottom right, #5fa9fd, #fda058);
+    }
+
+
+</style>
+
+<body class="body">
+    <div>
+        <div class="navigation-menu">
+            <div class="home">Home</div>
+            <div class="home">About Me</div>
+            <div class="home">deatils</div>
+           
+         </div>
+        <div class="content-div">
+            <div class="text-container">
+                <h1>I am CH.ESWARI a Web Developer</h1>
+                <p>I possess a unique blend of talent and creativity, allowing me to excel as a web developer,<br> where I consistently deliver innovative solutions and captivating designs.</p>
+                <h2>SILLS:</h2>
+                <ol >
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>javascritp</li>
+                    <li>reactjs</li>
+                    <li>python</li>
+                    <li>machine leaarning</li>
+                </ol>
+           
+            </div>
+            <img src="./img3.jpeg" width="270px" height="270px">
+        </div>
+          
+    </div>
+    <div class="form-div">
+        <h2>TO Contact</h2>
+        <p>Fill the deatiles</p>
+        <input type="text" value="" id="name" placeholder="Enter your name">
+        <button id="button">Submit</button>
+
+    </div>
+    
+</body>
+
+</html>

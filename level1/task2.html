@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calculator</title>
+</head>
+<script>
+
+    var now = new Date();
+    var hours = now.getHours();
+    var greeting;
+
+    if (hours < 12) {
+        greeting = 'Good morning!';
+    } else if (hours < 18) {
+        greeting = 'Good afternoon!';
+    } else {
+        greeting = 'Good evening!';
+    }
+
+    alert(greeting);
+
+
+
+    function calculate() {
+        var button = document.querySelector('.color-change-button');
+        button.style.backgroundColor = 'rgb(11, 250, 59)';
+
+
+        var num1 = parseFloat(document.getElementById('num1').value);
+        var num2 = parseFloat(document.getElementById('num2').value);
+        var result = num1 + num2;
+
+        document.getElementById('result').textContent = result;
+
+
+
+    }
+</script>
+<style>
+    .color-change-button {
+        background-color: rgb(103, 92, 252);
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .color-change-button:hover {
+        background-color: rgb(240, 247, 31);
+        color: rgb(18, 18, 18);
+    }
+    .body{
+        justify-content: center;
+        align-items: center;
+       position: absolute;
+       left: 35%;
+      background-color: aqua;
+      width: 400px;
+      height: 200px; 
+      top: 30%;
+    }
+    #num1{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    #num1{
+        border: none;
+        cursor: pointer;
+    }
+    #num2{
+        border: none;
+        cursor: pointer;
+    }
+</style>
+
+<body background-color="aqua">
+    <div class="body">
+
+        <label for="num1">value 1:</label>
+        <input type="number" id="num1"><br><br>
+
+        <label for="num2">value 2:</label>
+        <input type="number" id="num2"><br><br>
+        <button class="color-change-button" onclick="calculate()">calculate</button><br>
+
+
+        <p>Result: <span id="result"></span></p>
+    </div>
+</body>
+
+</html>
